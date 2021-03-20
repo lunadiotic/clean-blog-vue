@@ -8,11 +8,15 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 /* jQuery */
-import JQuery from 'jquery'
-window.$ = JQuery
+import jQuery from 'jquery'
+global.$ = jQuery
 
 /* Fontawesome */
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
+
+/* Clean Blog*/
+import '@/assets/css/app.css'
+import '@/assets/js/app.js'
 
 createApp(App).use(store).use(router).mount('#app')
